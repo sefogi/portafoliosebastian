@@ -1,10 +1,23 @@
-
+     
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #000;
-  color: #fffcfc;
+  color: #ffffff;
   position: auto;
   background: transparent;
+}
+.img{
+  width:45%;
+  height:auto;
+  display:flex;
+  border-radius: 10px;
+  justify-content: center;
+}
+.img img{
+  width:fit-content;
+  margin:20px;
+  border-radius:20%;
+  margin:40px 20px ;
 }
 
 body::before {
@@ -46,6 +59,7 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif;
+  color:white;
 }
 
 /*--------------------------------------------------------------
@@ -61,8 +75,10 @@ h6 {
   overflow-y: auto;
 }
 
-#header * {
+#header  {
   transition: ease-in-out 0.3s;
+  width: 100%;
+  height: 100vh;
 }
 
 #header h1 {
@@ -138,6 +154,7 @@ h6 {
   #header .container {
     display: flex;
     flex-direction: column;
+    width: 45%;
     align-items: center;
   }
 }
@@ -1053,7 +1070,7 @@ section .container {
 .contact .php-email-form .error-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
-  background: #ed3c0d;
+  background: #e98011;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1149,6 +1166,9 @@ section .container {
     transform: rotate(360deg);
   }
 }
+p{
+  color:#fff;
+}
 
 /*--------------------------------------------------------------
 # Credits
@@ -1163,15 +1183,27 @@ section .container {
   font-size: 13px;
   color: #fff;
   z-index: 999999;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 992px) {
   .credits {
     text-align: center;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
+  
+  }
+  .img img{
+    width: 150%;
+    
   }
 }
+
+/* @media (max-width: 365px) {
+  .img img{
+    width: 200px;
+    
+  }
+} */
 
 .credits a {
   color: #e98011;
@@ -1181,4 +1213,5 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
 
