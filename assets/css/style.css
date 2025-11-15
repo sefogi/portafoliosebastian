@@ -1,4 +1,3 @@
-     
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #000;
@@ -192,16 +191,6 @@ h6 {
   margin: 0;
 }
 
-@media (max-width: 768px) {
-  #header.header-top {
-    height: 60px;
-  }
-
-  #header.header-top h1 {
-    font-size: 26px;
-  }
-}
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -371,16 +360,6 @@ section.section-show {
 section .container {
   background: rgba(0, 0, 0, 0.9);
   padding: 30px;
-}
-
-@media (max-width: 768px) {
-  section {
-    top: 120px;
-  }
-
-  section.section-show {
-    top: 80px;
-  }
 }
 
 .section-title h2 {
@@ -1165,6 +1144,7 @@ section .container {
     transform: rotate(360deg);
   }
 }
+
 p{
   color:#fff;
 }
@@ -1197,13 +1177,6 @@ p{
   }
 }
 
-/* @media (max-width: 365px) {
-  .img img{
-    width: 200px;
-    
-  }
-} */
-
 .credits a {
   color: #e98011;
   transition: 0.3s;
@@ -1213,4 +1186,396 @@ p{
   color: #fff;
 }
 
+/*--------------------------------------------------------------
+# Responsive Mejoras para Móvil
+--------------------------------------------------------------*/
 
+/* Para tablets horizontales */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  #header .container {
+    width: 60%;
+  }
+}
+
+/* Para móviles - CORRECCIONES IMPORTANTES */
+@media (max-width: 768px) {
+  body {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  /* Ajustes críticos para el header en móvil */
+  #header {
+    height: auto;
+    min-height: 100vh;
+    padding: 60px 0 40px 0;
+    position: relative;
+  }
+
+  #header .container {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  #header h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+  }
+
+  #header h2 {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+
+  /* Reorganizar imagen */
+  .img {
+    order: -1;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .img img {
+    width: 180px !important;
+    height: 180px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+  }
+
+  #header .social-links {
+    margin-top: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #header .social-links a {
+    width: 38px;
+    height: 38px;
+    font-size: 15px;
+    margin: 5px;
+  }
+
+  /* Navbar móvil */
+  .navbar {
+    margin-top: 20px;
+  }
+
+  .mobile-nav-toggle {
+    top: 15px;
+    right: 15px;
+    z-index: 1001;
+    font-size: 32px;
+  }
+
+  /* Secciones en móvil - FIX IMPORTANTE */
+  section {
+    position: relative !important;
+    top: auto !important;
+    opacity: 1 !important;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  section.section-show {
+    position: relative !important;
+    top: auto !important;
+    padding: 20px 0;
+  }
+
+  section .container {
+    padding: 20px 15px;
+    margin-bottom: 20px;
+  }
+
+  /* Ajustar header cuando está en top */
+  #header.header-top {
+    height: auto;
+    position: fixed;
+    padding: 10px 0;
+  }
+
+  #header.header-top h1 {
+    font-size: 22px;
+    margin: 0;
+  }
+
+  #header.header-top .img,
+  #header.header-top h2,
+  #header.header-top .social-links {
+    display: none;
+  }
+
+  /* Section title responsive */
+  .section-title h2 {
+    font-size: 12px;
+  }
+
+  .section-title p {
+    font-size: 24px;
+    margin: -10px 0 20px 0;
+  }
+
+  /* About section */
+  .about-me .content h3 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .about-me .content p {
+    text-align: justify;
+    font-size: 14px;
+  }
+
+  /* Counts boxes */
+  .counts {
+    padding: 40px 0 30px;
+  }
+
+  .counts .count-box {
+    margin-bottom: 30px;
+    padding: 25px 20px 20px;
+  }
+
+  .counts .count-box span {
+    font-size: 28px;
+  }
+
+  /* Skills */
+  .skills .progress {
+    height: 50px;
+  }
+
+  .skills .progress .skill {
+    font-size: 14px;
+  }
+
+  /* Resume */
+  .resume .resume-title {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .resume .resume-item h4 {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .resume .resume-item h5 {
+    font-size: 14px;
+  }
+
+  .resume .resume-item ul li {
+    font-size: 14px;
+  }
+
+  /* Services */
+  .services .icon-box {
+    padding: 40px 15px;
+    margin-bottom: 20px;
+  }
+
+  .services .icon-box h4 {
+    font-size: 20px;
+  }
+
+  .services .icon-box p {
+    font-size: 13px;
+  }
+
+  /* Portfolio */
+  .portfolio #portfolio-flters {
+    padding: 0 10px;
+  }
+
+  .portfolio #portfolio-flters li {
+    font-size: 11px;
+    padding: 6px 10px;
+    margin: 5px 2px;
+  }
+
+  .portfolio .portfolio-item {
+    margin-bottom: 20px;
+  }
+
+  .portfolio .portfolio-wrap::before {
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+  }
+
+  .portfolio .portfolio-wrap .portfolio-info::before {
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .portfolio .portfolio-wrap .portfolio-info::after {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .portfolio .portfolio-wrap .portfolio-info h4 {
+    font-size: 16px;
+  }
+
+  .portfolio .portfolio-wrap .portfolio-info p {
+    font-size: 12px;
+  }
+
+  /* Contact */
+  .contact .info-box {
+    padding: 20px 15px;
+    margin-bottom: 20px;
+  }
+
+  .contact .info-box h3 {
+    font-size: 16px;
+    margin: 10px 0 8px 60px;
+  }
+
+  .contact .info-box p {
+    font-size: 13px;
+    margin-left: 60px;
+  }
+
+  .contact .php-email-form {
+    padding: 20px 15px;
+  }
+
+  /* Footer */
+  .credits {
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 12px;
+    position: relative;
+  }
+}
+
+/* Para móviles más pequeños */
+@media (max-width: 480px) {
+  body {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #header h1 {
+    font-size: 28px;
+  }
+
+  #header h2 {
+    font-size: 14px;
+  }
+
+  .img img {
+    width: 160px !important;
+    height: 160px !important;
+  }
+
+  #header .social-links a {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .section-title p {
+    font-size: 20px;
+  }
+
+  .section-title h2 {
+    font-size: 11px;
+  }
+
+  /* Portfolio filtros más pequeños */
+  .portfolio #portfolio-flters li {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+
+  /* Ajustar tarjetas de servicios */
+  .services .icon-box h4 {
+    font-size: 18px;
+  }
+
+  .services .icon-box p {
+    font-size: 12px;
+  }
+
+  /* Contact info boxes */
+  .contact .info-box {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .contact .info-box h3 {
+    font-size: 15px;
+    margin: 10px 0 5px 60px;
+  }
+
+  .contact .info-box p {
+    font-size: 12px;
+    margin: 0 0 0 60px;
+  }
+
+  /* Form en móvil pequeño */
+  .contact .php-email-form {
+    padding: 15px;
+  }
+}
+
+/* Para pantallas muy pequeñas (iPhone SE, etc) */
+@media (max-width: 375px) {
+  body {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  #header h1 {
+    font-size: 24px;
+  }
+
+  #header h2 {
+    font-size: 13px;
+  }
+
+  .img img {
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 50%;
+  }
+
+  .section-title p {
+    font-size: 18px;
+  }
+
+  .portfolio #portfolio-flters li {
+    font-size: 9px;
+    padding: 4px 6px;
+  }
+
+  .services .icon-box {
+    padding: 30px 10px;
+  }
+
+  .services .icon-box h4 {
+    font-size: 16px;
+  }
+}
