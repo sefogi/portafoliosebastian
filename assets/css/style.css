@@ -7,9 +7,9 @@ body {
 }
 
 .img img {
-  border-radius: 60px;
-  z-index: -1;
-  margin-bottom: 10px;
+  border-radius: 0px;
+  z-index: 1;
+  margin-bottom: 20px;
 }
 
 body::before {
@@ -67,7 +67,8 @@ h6 {
 #header h1 {
   font-size: 48px;
   margin: 0;
-  padding: 0;
+  padding-left: 120px;
+  line-height0;
   line-height: 1;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
@@ -83,23 +84,26 @@ h6 {
 #header h2 {
   font-size: 25px;
   margin-top: 20px;
+  padding-left: 120px;
   color: rgba(255, 255, 255, 0.8);
 }
 
 #header h2 span {
   color: orange;
   border-bottom: 2px solid #d29418;
-  padding-bottom: 6px;
+  padding-left:0px;
 }
 
 #header img {
-  max-height: 520px;
-  padding: 15px;
+  max-height: 620px;
+  padding-right: 120px;
+  
   margin: 0;
 }
 
 #header .social-links {
   margin-top: 40px;
+  padding-left: 120px;
   display: flex;
 }
 
@@ -132,6 +136,7 @@ h6 {
   }
 
   #header .social-links {
+    padding-left: 100px;
     margin-top: 15px;
   }
 
@@ -188,13 +193,13 @@ h6 {
 * Desktop Navigation 
 */
 .navbar {
-  padding: 0;
+  padding-left: 120px ;
   margin-top: 35px;
 }
 
 .navbar ul {
   margin: 0;
-  padding: 0;
+  padding: 0 ;
   display: flex;
   list-style: none;
   align-items: center;
