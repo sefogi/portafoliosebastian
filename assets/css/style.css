@@ -1559,8 +1559,8 @@ p {
   }
 
   .img img {
-    width: 150px !important;
-    height: 150px !important;
+    width: 150% !important;
+    height: auto !important;
     border-radius: 50%;
   }
 
