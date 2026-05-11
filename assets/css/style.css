@@ -1488,8 +1488,8 @@ p {
   }
 
   .img img {
-    width: 160px !important;
-    height: 160px !important;
+    width: 180% !important;
+    height: auto !important;
   }
 
   #header .social-links a {
