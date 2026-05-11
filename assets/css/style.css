@@ -1559,7 +1559,7 @@ p {
   }
 
   .img img {
-    width: 150% !important;
+    width: 180% !important;
     height: auto !important;
     border-radius: 50%;
   }
